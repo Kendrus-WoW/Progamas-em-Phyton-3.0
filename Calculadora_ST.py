@@ -1,15 +1,13 @@
-# -*- coding: utf-8 -*-
-
 import streamlit as st
 
 # Título do aplicativo
 st.title('Calculadora de Descontos')
 
 # Solicita o valor do produto ao usuário
-n1 = st.number_input('Coloque o valor do produto aqui:', min_value=0.0, format="%.2f")
+n1 = st.number_input('Coloque o valor do produto aqui:')
 
 # Solicita a porcentagem de desconto ao usuário
-n2 = st.number_input('Coloque a porcentagem de desconto aqui:', min_value=0.0, max_value=100.0, format="%.2f")
+n2 = st.number_input('Coloque a porcentagem de desconto aqui:')
 
 # Calcula o preço final após aplicar o desconto
 soma = n1 - (n1 * n2) / 100
