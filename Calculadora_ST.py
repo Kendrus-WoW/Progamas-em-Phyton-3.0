@@ -15,7 +15,7 @@ n2 = st.number_input('Coloque a porcentagem de desconto aqui:', min_value=0.0, m
 soma = n1 - (n1 * n2) / 100
 
 # Mostra o preço do produto, o desconto, e por último qual o preço do produto com o desconto
-st.write(f'O produto que era R${n1:.2f} com o desconto de {n2}% ficou R${soma:.2f}')
+st.write(f'O produto que era   R${n1:.2f}   com   o   desconto   de   {n2}%   ficou   R${soma:.2f}')
 
 # Mostra se o produto está com um bom desconto, abaixo de 500, 300 e 100
 if soma > 500:
